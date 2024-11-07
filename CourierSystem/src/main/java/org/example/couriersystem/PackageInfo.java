@@ -1,8 +1,8 @@
 package org.example.couriersystem;
 
-public class Package {
+public class PackageInfo {
     private long packageId;
-    private double weight;
+    private double weight; //in grams
     private double height;
     private double length;
     private double width;

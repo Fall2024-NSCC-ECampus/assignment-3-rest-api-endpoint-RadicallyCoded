@@ -2,7 +2,7 @@ package org.example.couriersystem;
 
 public class Delivery {
     private long deliveryId;
-    private String deliverDate;
+    private String deliveryDate;
     //private String status;
 
     public long getDeliveryId() {
@@ -13,17 +13,17 @@ public class Delivery {
         this.deliveryId = deliveryId;
     }
 
-    public String getDeliverDate() {
-        return deliverDate;
+    public String getDeliveryDate() {
+        return deliveryDate;
     }
 
-    public void setDeliverDate(String deliverDate) {
-        this.deliverDate = deliverDate;
+    public void setDeliveryDate(String deliveryDate) {
+        this.deliveryDate = deliveryDate;
     }
 
-    public Package updateStatus() {
+    public PackageInfo updateStatus() {
         //change delivery status
-        Package status = new Package();
+        PackageInfo status = new PackageInfo();
         status.getStatus();
 
         //if package is on the way { status = "In Transit" }

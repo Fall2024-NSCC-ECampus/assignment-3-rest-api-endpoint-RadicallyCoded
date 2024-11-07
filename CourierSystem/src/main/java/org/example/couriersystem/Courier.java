@@ -30,9 +30,9 @@ public class Courier {
     }
 
     public void assignPackage() {
-        Package packageId = new Package();
-        packageId.getPackageId();
+        PackageInfo packageInfoId = new PackageInfo();
+        packageInfoId.getPackageId();
 
-        System.out.println("Assigned package #" + packageId + " to courier: " + name);
+        System.out.println("Assigned package #" + packageInfoId + " to courier: " + name);
     }
 }

@@ -65,10 +65,10 @@ public class Retailer {
 
     public void createOrder() {
         //lets retailer order delivery for package
-        Package packageId = new Package();
-        packageId.getPackageId();
+        PackageInfo packageInfoId = new PackageInfo();
+        packageInfoId.getPackageId();
 
-        System.out.println("Order created for package #" + packageId);
+        System.out.println("Order created for package #" + packageInfoId);
     }
 
     public void makePayment() {

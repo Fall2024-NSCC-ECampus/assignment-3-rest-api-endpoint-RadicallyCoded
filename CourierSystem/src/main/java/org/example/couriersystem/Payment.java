@@ -8,8 +8,8 @@ public class Payment {
 
 
 
-    public Package getAmount() {
-        Package amount = new Package();
+    public PackageInfo getAmount() {
+        PackageInfo amount = new PackageInfo();
         amount.calculateShippingCost();
 
         return amount;
@@ -49,14 +49,14 @@ public class Payment {
 
     public void processPayment() {
         status = "Paid";
-        Package amount = getAmount();
+        PackageInfo amount = getAmount();
 
         System.out.println("Payment of $" + amount + " paid in full via " + method + ".");
     }
 
     public void refundPayment() {
         status = "Refunded";
-        Package amount = getAmount();
+        PackageInfo amount = getAmount();
 
         System.out.println("Payment of $" + amount + " refunded.");
     }
